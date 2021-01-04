@@ -7,7 +7,6 @@ class Test extends Component {
     this.state = {
       value: 0,
     };
-    this.add = this.add.bind(this);
   }
 
   add(size) {

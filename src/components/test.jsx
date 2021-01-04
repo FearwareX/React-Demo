@@ -1,10 +1,11 @@
 import { Component } from 'react';
+import { Button } from 'antd'
 
 class Test extends Component{
   constructor(props){
     super(props)
     this.state = {
-      value: 0
+      value: 0,
     }
     this.add = this.add.bind(this)
   }
@@ -16,7 +17,7 @@ class Test extends Component{
     })
   };
   render(){
-    return <button type="text" onClick={(e)=>this.add(10,e)}>{this.state.value}</button>
+    return <Button onClick={(e)=>this.add(10,e)}>当前:{this.state.value}点击增加</Button>
   }
 }
 

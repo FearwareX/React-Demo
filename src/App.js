@@ -1,6 +1,7 @@
 import logo from './images/logo.svg';
 import { Button } from 'antd'
 import { Test } from './components/test.jsx'
+import { Clock } from './components/clock.jsx'
 import './App.less';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Button type="primary">Learn React</Button>
         </a>
         <Test />
+        <Clock /> 
       </header>
     </div>
   );

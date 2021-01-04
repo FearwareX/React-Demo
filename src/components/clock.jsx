@@ -1,38 +1,37 @@
-import {Component} from 'react'
-class Clock extends Component{
-  constructor(props){
-    super(props)
+import React, { Component } from 'react';
+
+class Clock extends Component {
+  constructor(props) {
+    super(props);
     this.state = {
-      timer: new Date()
-    }
-  };
-
-  componentDidMount(){
-    this.timer = setInterval(
-      ()=>{
-        this.trick()
-      },1000
-    )
+      timer: new Date(),
+    };
   }
 
-  componentWillUnmount(){
-    clearInterval(this.timer)
+  componentDidMount() {
+    this.timer = setInterval(() => {
+      this.trick();
+    }, 1000);
   }
 
-  trick(){
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+
+  trick() {
     this.setState({
-      timer: new Date()
-      
-    })
+      timer: new Date(),
+    });
   }
 
-  render(){
+  render() {
+    const { timer } = this.state;
     return (
       <div>
-        <div>{ this.state.timer.toLocaleTimeString() }</div>
+        <div>{timer.toLocaleTimeString()}</div>
       </div>
-    )
+    );
   }
 }
 
-export { Clock }
+export { Clock };

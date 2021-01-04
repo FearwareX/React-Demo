@@ -1,24 +1,33 @@
-import { Component } from 'react';
-import { Button } from 'antd'
+import React, { Component } from 'react';
+import { Button } from 'antd';
 
-class Test extends Component{
-  constructor(props){
-    super(props)
+class Test extends Component {
+  constructor(props) {
+    super(props);
     this.state = {
       value: 0,
-    }
-    this.add = this.add.bind(this)
+    };
+    this.add = this.add.bind(this);
   }
-  add(size,e){
+
+  add(size) {
     let { value } = this.state;
     value += size;
     this.setState({
-      value
-    })
-  };
-  render(){
-    return <Button onClick={(e)=>this.add(10,e)}>当前:{this.state.value}点击增加</Button>
+      value,
+    });
+  }
+
+  render() {
+    const { value } = this.state;
+    return (
+      <Button onClick={(e) => this.add(10, e)}>
+        当前:
+        {value}
+        点击增加
+      </Button>
+    );
   }
 }
 
-export { Test }
+export { Test };

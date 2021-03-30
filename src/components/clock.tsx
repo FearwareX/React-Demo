@@ -1,30 +1,35 @@
-import { Component } from 'react';
+import { Component, FC } from 'react';
 
+interface Prop {
+  state: {
+    timer: Date;
+  };
+}
 class Clock extends Component {
-  constructor(props) {
+  constructor(props: Prop) {
     super(props);
     this.state = {
-      timer: new Date(),
+      timer: new Date()
     };
   }
 
-  componentDidMount() {
+  componentDidMount(): void {
     this.timer = setInterval(() => {
       this.trick();
     }, 1000);
   }
 
-  componentWillUnmount() {
+  componentWillUnmount(): void {
     clearInterval(this.timer);
   }
 
-  trick() {
+  trick(): void {
     this.setState({
-      timer: new Date(),
+      timer: new Date()
     });
   }
 
-  render() {
+  render(): FC {
     const { timer } = this.state;
     return (
       <div>

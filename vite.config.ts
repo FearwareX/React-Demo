@@ -38,8 +38,8 @@ export default defineConfig({
     legacy({
       targets: ['defaults', 'not IE 11']
     })
-  ],
-  esbuild: {
-    jsxInject: `import React,{ FC } from 'react'`
-  }
+  ]
+  // esbuild: {
+  //   jsxInject: `import React,{ FC } from 'react'`
+  // }
 });

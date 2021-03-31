@@ -1,11 +1,7 @@
-import { Clock } from '../components/clock';
+import React, { FC, ReactElement } from 'react';
 
-function Index() {
-  return (
-    <>
-      <Clock />
-    </>
-  );
-}
+const Index: FC = (): ReactElement => {
+  return <></>;
+};
 
 export default Index;

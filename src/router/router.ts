@@ -1,17 +1,18 @@
-import Index from '../pages/index';
-import { Clock } from '../components/clock';
+import { RouteConfig } from 'react-router-config';
+import Todo from '@/pages/todo';
+import Demo from '@/pages/demo';
 
-const routes = [
+const routes: RouteConfig[] = [
   {
     path: '/',
-    component: Index,
-    exact: true,
+    component: Todo,
+    exact: true
   },
   {
-    path: '/clock',
-    component: Clock,
-    exact: true,
-  },
+    path: '/demo',
+    component: Demo,
+    exact: true
+  }
 ];
 
 export default routes;

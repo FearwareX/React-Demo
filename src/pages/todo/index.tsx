@@ -9,6 +9,7 @@ import MyHeader from '@/components/Header';
 import TdList from '@/components/Todo/List';
 import TdInput from '@/components/Todo/Input';
 import { todoReducer } from '@/components/Todo/reducer';
+import { ACTION_TYPE, ITodo, Istate } from '~/src/components/Todo/typings';
 
 // 惰性初始化
 const init = (initTodoList: ITodo[]): Istate => {

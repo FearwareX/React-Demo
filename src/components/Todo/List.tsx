@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { FC, ReactElement } from 'react';
 import Tditem from './Item';
+import { ITodo } from './typings';
 
 interface IProps {
   todoList: ITodo[];

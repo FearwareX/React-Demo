@@ -1,3 +1,5 @@
+import { ACTION_TYPE, Istate, IAction, ITodo } from './typings';
+
 const todoReducer = (state: Istate, action: IAction): Istate => {
   const { type, payload } = action;
 

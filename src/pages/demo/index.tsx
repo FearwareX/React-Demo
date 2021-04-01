@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Button } from 'antd';
 import './index.less';
 import Time from '@/components/Other/Time';
+import TimeHook from '@/components/Other/TimeHook';
 
 const Index: FC = (): ReactElement => {
   const [name, setName] = useState('HelloWorld');
@@ -20,6 +21,7 @@ const Index: FC = (): ReactElement => {
         {name}
       </Button>
       <Time />
+      <TimeHook />
     </div>
   );
 };

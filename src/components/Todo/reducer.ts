@@ -1,6 +1,6 @@
-import { ACTION_TYPE, Istate, IAction, ITodo } from './typings';
+import { ACTION_TYPE, IState, IAction, ITodo } from './typings';
 
-const todoReducer = (state: Istate, action: IAction): Istate => {
+const todoReducer = (state: IState, action: IAction): IState => {
   const { type, payload } = action;
 
   switch (type) {

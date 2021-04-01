@@ -4,7 +4,7 @@ export interface ITodo {
   completed: boolean;
 }
 
-export interface Istate {
+export interface IState {
   todoList: ITodo[];
 }
 

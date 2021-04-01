@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React, { FC, ReactElement } from 'react';
-import { ITodo } from './typings';
 import Tditem from './Item';
 
 interface IProps {
@@ -16,6 +16,7 @@ const TdList: FC<IProps> = ({
   return (
     <div className='todo_list'>
       {todoList &&
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         todoList!.map((todo: ITodo) => {
           return (
             <Tditem

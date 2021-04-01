@@ -8,7 +8,6 @@ import React, {
 import MyHeader from '@/components/Header';
 import TdList from '@/components/Todo/List';
 import TdInput from '@/components/Todo/Input';
-import { ITodo, Istate, ACTION_TYPE } from '@/components/Todo/typings';
 import { todoReducer } from '@/components/Todo/reducer';
 
 // 惰性初始化

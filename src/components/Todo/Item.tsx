@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React, { FC, ReactElement } from 'react';
-import { ITodo } from './typings';
 
 interface IProps {
   todo: ITodo;

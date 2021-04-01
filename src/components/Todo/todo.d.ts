@@ -1,19 +1,19 @@
-export interface ITodo {
+declare interface ITodo {
   id: number;
   content: string;
   completed: boolean;
 }
 
-export interface Istate {
+declare interface Istate {
   todoList: ITodo[];
 }
 
-export interface IAction {
+declare interface IAction {
   type: ACTION_TYPE;
   payload: ITodo | number;
 }
 
-export enum ACTION_TYPE {
+declare enum ACTION_TYPE {
   ADD_TODO = 'addTodo',
   REMOVE_TODO = 'removeTodo',
   TOGGLE_TODO = 'toggleTodo'

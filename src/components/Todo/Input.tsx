@@ -1,5 +1,4 @@
 import React, { useRef, FC, ReactElement } from 'react';
-import { ITodo } from './typings';
 
 interface TodoProps {
   addTodo: (todo: ITodo) => void;
